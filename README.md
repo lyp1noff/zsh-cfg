@@ -8,4 +8,4 @@ git clone https://github.com/lyp1noff/zsh-cfg.git
 
 cd ./zsh-cfg/zsh
 
-cp -r * ~/.
+cp -r . ~/.
