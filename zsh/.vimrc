@@ -1,10 +1,9 @@
 colorscheme default
 set number
-" set relativenumber
+"set relativenumber
 set mouse=a
 syntax on
 set ruler
-set cursorline
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
