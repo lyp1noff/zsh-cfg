@@ -7,3 +7,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.oh-my-zsh/custom/themes/lyp1noff.zsh-theme -O ~/.oh-my-zsh/custom/themes/lyp1noff.zsh-theme
+
+wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.vimrc -O ~/.vimrc
+wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.tmux.conf -O ~/.tmux.conf
