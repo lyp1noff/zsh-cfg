@@ -5,8 +5,8 @@
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.zshrc -O ~/.zshrc
-wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.oh-my-zsh/custom/themes/lyp1noff.zsh-theme -O ~/.oh-my-zsh/custom/themes/lyp1noff.zsh-theme
+curl -o ~/.zshrc https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.zshrc
+curl -o ~/.oh-my-zsh/custom/themes/lyp1noff.zsh-theme https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.oh-my-zsh/custom/themes/lyp1noff.zsh-theme
 
-wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.vimrc -O ~/.vimrc
-wget https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.tmux.conf -O ~/.tmux.conf
+curl -o ~/.vimrc https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.vimrc
+curl -o ~/.tmux.conf https://raw.githubusercontent.com/lyp1noff/zsh-cfg/main/zsh/.tmux.conf
