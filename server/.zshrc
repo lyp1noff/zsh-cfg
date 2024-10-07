@@ -19,15 +19,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias diff='diff --color=auto'
     alias ip='ip --color=auto'
 
-    alias pacman='pacman --color=auto' 
-
-    export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
-    export LESS_TERMCAP_md=$'\E[1;36m'     # begin bold
-    export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
-    export LESS_TERMCAP_so=$'\E[01;33m'    # begin reverse video
-    export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
-    export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
-    export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+    alias pacman='pacman --color=auto'
 
     # Take advantage of $LS_COLORS for completion as well
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -38,15 +30,15 @@ fi
 alias ll='ls -l'
 alias la='ls -la'
 
-bindkey "^[f" forward-word
-bindkey "^[b" backward-word
-bindkey "^[[1;5D" backward-word
-bindkey "^[[1;5C" forward-word
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey  "^[[3~"  delete-char
-bindkey '^[[A' history-search-backward
-bindkey '^[[B' history-search-forward
+bindkey "^[f" forward-word             # Move forward one word (ALT + F)
+bindkey "^[b" backward-word            # Move backward one word (ALT + B)
+bindkey "^[[1;5D" backward-word        # Move backward one word (Ctrl + Left Arrow)
+bindkey "^[[1;5C" forward-word         # Move forward one word (Ctrl + Right Arrow)
+bindkey "^[[H" beginning-of-line       # Move to the beginning of the line (Home key)
+bindkey "^[[F" end-of-line             # Move to the end of the line (End key)
+bindkey "^[[3~" delete-char            # Delete character under the cursor (Delete key)
+bindkey "^[[A" history-search-backward # Search through history backward based on input (Up Arrow)
+bindkey "^[[B" history-search-forward  # Search through history forward based on input (Down Arrow)
 
 HISTSIZE=10000
 SAVEHIST=10000
