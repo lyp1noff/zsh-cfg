@@ -34,6 +34,7 @@ SAVEHIST=10000
 HISTFILE=~/.zsh_history
 setopt appendhistory
 setopt hist_ignore_space
+setopt share_history
 
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
@@ -45,7 +46,6 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export TERM=xterm-256color
 export EDITOR=vim
-export GOPATH=$HOME/.go
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
